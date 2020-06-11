@@ -1,0 +1,61 @@
+### GetAll
+GET http://localhost:3000/posts/
+Accept: application/json
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWUxNjVhOGQ3NDk3NTRiZTg4MGRlZjYiLCJpYXQiOjE1OTE4MzI2ODZ9.OpJOpg4AMeazER8u130NEHnvjYR8DtukScYrMEzz1-w
+
+### GetOne
+GET http://localhost:3000/posts/5ee20ccd203da14a0c31e7e5
+Accept: application/json
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWUxNjVhOGQ3NDk3NTRiZTg4MGRlZjYiLCJpYXQiOjE1OTE4MzI2ODZ9.OpJOpg4AMeazER8u130NEHnvjYR8DtukScYrMEzz1-w
+
+### DeleteById
+DELETE  http://localhost:3000/posts/5ee20ccd203da14a0c31e7e5
+Accept: application/json
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWUxNjVhOGQ3NDk3NTRiZTg4MGRlZjYiLCJpYXQiOjE1OTE4MzI2ODZ9.OpJOpg4AMeazER8u130NEHnvjYR8DtukScYrMEzz1-w
+
+### Create
+POST http://localhost:3000/posts/
+Accept: application/json
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWUxNjVhOGQ3NDk3NTRiZTg4MGRlZjYiLCJpYXQiOjE1OTE4MzI2ODZ9.OpJOpg4AMeazER8u130NEHnvjYR8DtukScYrMEzz1-w
+
+{
+    "title": "New Post  Nawito",
+    "desc": "No fgadgaddg needed"
+}
+
+### Update
+PUT http://localhost:3000/posts/5ee20ccd203da14a0c31e7e5
+Accept: application/json
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWUxNjVhOGQ3NDk3NTRiZTg4MGRlZjYiLCJpYXQiOjE1OTE4MzI2ODZ9.OpJOpg4AMeazER8u130NEHnvjYR8DtukScYrMEzz1-w
+
+{
+    "title": "Updated Post"
+}
+
+#### AUTH
+### Regitser
+POST http://localhost:3000/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "username": "owi122",
+    "name": "Omar Nawito",
+    "password": "123456"
+}
+
+
+### Login
+POST http://localhost:3000/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "username": "owi122",
+    "password": "123456"
+}
